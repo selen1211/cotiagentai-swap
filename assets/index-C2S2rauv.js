@@ -87707,132 +87707,21 @@ const Fme = 1e9,
     const { burned: t, burnedPercent: n, totalSupply: r, ethPrice: i } = Vme(),
       o = A.useRef(null),
       u = [
-        { title: "Total Supply", value: r === void 0 ? "1,000,000,000" : Zi(r, 0) },
-        {
-          title: "Liquidity Pool",
-          value: t === void 0 ? "LP Burned" : `${Zi(t, 0)} (${n.toFixed(2)}%)`,
-        },
-        { title: "Buy/Sell Tax", value: r === void 0 ? "0%" : Zi(r, 0) },
-        {
-          title: "Ownership",
-          value:
-            e.totalDistributed === 0 || i === 0
-              ? "Renounced"
-              : `$${Zi(e.totalDistributed * i, 0)}`,
-        },
+        // { title: "Total Supply", value: r === void 0 ? "1,000,000,000" : Zi(r, 0) },
+        // {
+        //   title: "Liquidity Pool",
+        //   value: t === void 0 ? "LP Burned" : `${Zi(t, 0)} (${n.toFixed(2)}%)`,
+        // },
+        // { title: "Buy/Sell Tax", value: r === void 0 ? "0%" : Zi(r, 0) },
+        // {
+        //   title: "Ownership",
+        //   value:
+        //     e.totalDistributed === 0 || i === 0
+        //       ? "Renounced"
+        //       : `$${Zi(e.totalDistributed * i, 0)}`,
+        // },
       ];
-    return j.jsxDEV(
-      "div",
-      {
-        className:
-          "sticky bottom-0 bg-primary-200 border-y border-primary-400/80 py-4",
-        children: j.jsxDEV(
-          kz,
-          {
-            slidesPerView: 5,
-            spaceBetween: 25,
-            speed: 8e3,
-            loop: !0,
-            centeredSlides: !0,
-            simulateTouch: !1,
-            autoplay: { delay: 0, disableOnInteraction: !0 },
-            freeMode: !0,
-            modules: [Lme, Ime, Mme],
-            breakpoints: {
-              "@0.00": { slidesPerView: 1, spaceBetween: 10 },
-              "@0.75": { slidesPerView: 2, spaceBetween: 20 },
-              "@1.00": { slidesPerView: 2, spaceBetween: 40 },
-              "@1.50": { slidesPerView: 3, spaceBetween: 40 },
-              "@2": { slidesPerView: 3, spaceBetween: 40 },
-            },
-            className:
-              "[&>.swiper-wrapper]:ease-linear [&>.swiper-wrapper]:items-center",
-            onSwiper: (l) => (o.current = l),
-            children: [...u, ...u].map((l, c) =>
-              j.jsxDEV(
-                Az,
-                {
-                  children: j.jsxDEV(
-                    "div",
-                    {
-                      className: "flex gap-2 items-end",
-                      children: [
-                        j.jsxDEV(
-                          "p",
-                          { children: [l.title, ":"] },
-                          void 0,
-                          !0,
-                          {
-                            fileName:
-                              "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-                            lineNumber: 86,
-                            columnNumber: 15,
-                          },
-                          void 0
-                        ),
-                        j.jsxDEV(
-                          "p",
-                          {
-                            className:
-                              "text-primary-400 text-2xl font-semibold -mb-[2px]",
-                            children: l.value,
-                          },
-                          void 0,
-                          !1,
-                          {
-                            fileName:
-                              "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-                            lineNumber: 87,
-                            columnNumber: 15,
-                          },
-                          void 0
-                        ),
-                      ],
-                    },
-                    c,
-                    !0,
-                    {
-                      fileName:
-                        "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-                      lineNumber: 85,
-                      columnNumber: 13,
-                    },
-                    void 0
-                  ),
-                },
-                void 0,
-                !1,
-                {
-                  fileName:
-                    "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-                  lineNumber: 84,
-                  columnNumber: 11,
-                },
-                void 0
-              )
-            ),
-          },
-          void 0,
-          !1,
-          {
-            fileName:
-              "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-            lineNumber: 45,
-            columnNumber: 7,
-          },
-          void 0
-        ),
-      },
-      void 0,
-      !1,
-      {
-        fileName:
-          "/builds/ac/cotiagents.ai/coti-agents-lucky-draw-website/src/components/slider/index.tsx",
-        lineNumber: 44,
-        columnNumber: 5,
-      },
-      void 0
-    );
+    
   },
   Bme = (e) => {
     const n = Date.now() - e,
