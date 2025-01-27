@@ -58107,9 +58107,9 @@ const Zi = (e, t = 3) => {
       void 0
     );
   },
-  Tle = "https://t.me/",
-  Nle = "https://x.com/",
-  _le = "https://t.me/",
+  Tle = "https://t.me/cotiagent_ai/",
+  Nle = "https://x.com/cotiagent_ai/",
+  _le = "https://t.me/cotiagent_ai/",
   Ole = () =>
     j.jsxDEV(
       "footer",
